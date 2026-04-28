@@ -1,0 +1,27 @@
+# Antigravity Workspace Template
+
+> Multi-agent repository knowledge engine and MCP server for AI coding agents.
+
+Canonical repository: https://github.com/study8677/antigravity-workspace-template
+
+Antigravity is an AI IDE starter kit for Claude Code, Codex CLI, Cursor, Windsurf, Gemini CLI, Cline, Aider, and VS Code Copilot. It turns a codebase into a queryable workspace by generating reusable `.antigravity/` knowledge, module docs, structure maps, conventions, git insights, and optional GitNexus graph context.
+
+## Primary Entry Points
+
+- `ag init`: inject shared AI workspace context files into a repository.
+- `ag-refresh`: build module knowledge docs, routing maps, structure, conventions, and git insights.
+- `ag-ask`: answer repository questions with file paths, line numbers, and module knowledge.
+- `ag-mcp`: expose `ask_project` and `refresh_project` over MCP for Claude Code and other compatible hosts.
+
+## Important URLs
+
+- Repository: https://github.com/study8677/antigravity-workspace-template
+- English README: https://github.com/study8677/antigravity-workspace-template/blob/main/README.md
+- Chinese README: https://github.com/study8677/antigravity-workspace-template/blob/main/README_CN.md
+- Spanish README: https://github.com/study8677/antigravity-workspace-template/blob/main/README_ES.md
+- Documentation: https://github.com/study8677/antigravity-workspace-template/tree/main/docs/en
+- Issues: https://github.com/study8677/antigravity-workspace-template/issues
+
+## Search Topics
+
+AI workspace template, AI IDE starter kit, MCP server for coding agents, Claude Code repository Q&A, Codex CLI project context, Cursor codebase assistant, Windsurf agent memory, Gemini CLI coding assistant, multi-agent codebase documentation, repository knowledge graph, GitNexus code search, graph-aware impact analysis, `.antigravity` project memory.

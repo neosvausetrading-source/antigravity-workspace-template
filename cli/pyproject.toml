@@ -5,14 +5,41 @@ build-backend = "hatchling.build"
 [project]
 name = "antigravity-cli"
 version = "1.0.0"
-description = "Inject the Artifact-First cognitive architecture into any project."
+description = "CLI for bootstrapping Antigravity AI workspace context files into any repository."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
+keywords = [
+    "ai-coding",
+    "ai-ide",
+    "claude-code",
+    "codex-cli",
+    "cursor",
+    "mcp",
+    "workspace-template",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
 dependencies = [
     "typer>=0.9.0",
     "rich>=13.0.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/study8677/antigravity-workspace-template"
+Repository = "https://github.com/study8677/antigravity-workspace-template"
+Documentation = "https://github.com/study8677/antigravity-workspace-template/tree/main/docs/en"
+Issues = "https://github.com/study8677/antigravity-workspace-template/issues"
 
 [project.scripts]
 ag = "ag_cli.cli:app"

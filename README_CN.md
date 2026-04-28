@@ -1,14 +1,16 @@
-﻿<div align="center">
+<div align="center">
 
 <img src="docs/assets/logo.png" alt="Antigravity Workspace" width="200"/>
 
-# AI Workspace Template
+# Antigravity 工作区模板 — Claude Code / Codex / Cursor 起手套件
 
-### 面向任意代码库的多智能体知识引擎。
+### 多智能体知识引擎 + MCP 服务。把任意代码库变成可问答的 AI 工作区。支持 Claude Code、Codex CLI、Cursor、Windsurf、Gemini CLI。
 
 `ag-refresh` 构建知识库。`ag-ask` 回答问题。默认使用调用它的主 Agent 的 LLM 能力，无需额外配置 provider key。
 
 语言: [English](README.md) | **中文** | [Español](README_ES.md)
+
+**可被搜索到的使用场景：** AI 工作区模板、Claude Code MCP 服务、Codex CLI 项目上下文、Cursor 代码库问答、Windsurf Agent 记忆、Gemini CLI 编程助手、代码库知识图谱、GitNexus 代码搜索、多智能体软件开发。
 
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
@@ -62,6 +64,19 @@
 | 问"X 怎么实现的？" | Agent 胡乱翻文件 | `ask_project` MCP → Router 精准路由到负责模块的 Agent |
 
 架构是**文件 + 实时问答引擎**，而非插件。跨 IDE、跨 LLM、零平台锁定。
+
+---
+
+## 谁适合使用 Antigravity？
+
+Antigravity 面向希望拥有 **AI IDE 起手套件** 的开发者，而不是到处维护零散 prompt 文件。它让 Claude Code、Codex CLI、Cursor、Windsurf、Gemini CLI、Cline、Aider 和 VS Code Copilot 共享同一套可复用项目知识，让编程 Agent 能基于真实仓库证据回答架构、依赖、实现和 git 历史问题。
+
+适合这些场景：
+- **代码库问答** —— 询问模块如何工作，得到带文件路径、行号和 `agents/*.md` 知识文档依据的答案。
+- **MCP 上下文引擎** —— 将 `ask_project` 和 `refresh_project` 暴露给 Claude Code 或任何支持 MCP 的 AI 编程流程。
+- **多智能体文档生成** —— 运行 `ag-refresh` 生成模块知识、路由地图、约定、结构和 git 洞察。
+- **跨 IDE 的 AI 记忆层** —— 用 `.antigravity/` 作为 Claude Code、Codex、Cursor、Windsurf、Gemini CLI、Cline、Aider 和 Copilot 的共享知识层。
+- **图谱增强代码搜索** —— 将语义模块文档与可选 GitNexus 调用图、依赖关系和影响分析结合。
 
 ---
 
@@ -629,4 +644,3 @@ MIT License. 详见 [LICENSE](LICENSE)。
 友情链接：[LINUX DO](https://linux.do/)
 
 </div>
-

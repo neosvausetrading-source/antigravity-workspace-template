@@ -1,6 +1,10 @@
-﻿# 📚 Documentación de Antigravity Workspace
+# Documentación de Antigravity Workspace
 
-Bienvenido a la documentación integral de la **Plantilla Antigravity Workspace** — un starter kit de nivel producción para construir agentes autónomos de IA en Google Antigravity.
+Bienvenido a la documentación de **Antigravity Workspace Template**, un starter kit de AI IDE, motor de conocimiento multi-agente y servidor MCP para Claude Code, Codex CLI, Cursor, Windsurf, Gemini CLI, Cline, Aider y VS Code Copilot.
+
+Antigravity convierte un repositorio en un workspace de programación consultable por IA. `ag-refresh` construye conocimiento del proyecto en `.antigravity/`, docs de módulos, mapas de enrutamiento, convenciones, estructura e insights de git. `ag-ask` y `ag-mcp` permiten a los agentes responder preguntas del repositorio con rutas de archivo, números de línea y contexto opcional del grafo GitNexus.
+
+Términos de búsqueda que esta documentación cubre intencionalmente: plantilla de workspace de IA, servidor MCP para agentes de programación, Q&A de repositorios en Claude Code, contexto de proyecto para Codex CLI, búsqueda de código IA en Cursor, memoria de agentes en Windsurf, asistente de codebase Gemini CLI, grafo de conocimiento GitNexus y flujo de desarrollo multi-agente.
 
 ## 🎯 Navegación Rápida
 
@@ -18,21 +22,20 @@ Bienvenido a la documentación integral de la **Plantilla Antigravity Workspace*
 
 ## 🌟 Características Clave
 
-### 🧠 Motor de Memoria Infinita
-La resumización recursiva comprime automáticamente el historial—los límites de contexto se acabaron.
+### 🧠 Knowledge Hub del Repositorio
+`ag-refresh` escanea el codebase y escribe conocimiento reutilizable en `.antigravity/`, incluyendo docs de módulos, estructura, convenciones, mapas y facts con evidencia.
 
-### 🛠️ Protocolo Universal de Herramientas
-Patrón genérico ReAct. Solo registra cualquier función Python en `antigravity_engine/tools/`, y el Agente aprende a usarla automáticamente.
+### 🔌 Servidor MCP para AI IDEs
+`ag-mcp` expone `ask_project` y `refresh_project` para que Claude Code y otros agentes compatibles con MCP consulten el repositorio en vez de releer todo el árbol.
+
+### 🧭 Q&A de Codebase con Evidencia
+`ag-ask` enruta preguntas al conocimiento de módulo correcto y devuelve respuestas fundamentadas en rutas de archivo, números de línea, docs generados por agentes, insights de git y datos opcionales de GitNexus.
 
 ### 🎓 Inicialización de Proyectos con Skills
-Usa la skill integrada `agent-repo-init` para crear un repositorio limpio desde esta plantilla.
-Soporta modos `quick` y `full`, y expone un script portable en `skills/agent-repo-init/scripts/init_project.py`.
+Usa la skill integrada `agent-repo-init` para crear un repositorio limpio desde esta plantilla. Soporta modos `quick` y `full`, y expone un script portable en `skills/agent-repo-init/scripts/init_project.py`.
 
-### ⚡️ Nativo de Gemini
-Optimizado para velocidad de Gemini 2.0 Flash y capacidades de function calling.
-
-### 🔌 Soporte de LLM Externo
-Llama cualquier API compatible con OpenAI mediante la herramienta integrada `call_openai_chat` (soporta OpenAI, Azure, Ollama).
+### 🧩 Capa de Contexto entre IDEs
+Una sola capa `.antigravity/` puede reutilizarse desde Claude Code, Codex CLI, Cursor, Windsurf, Gemini CLI, Cline, Aider y VS Code Copilot.
 
 ## 🚀 Tareas Comunes
 
@@ -110,7 +113,7 @@ Llama cualquier API compatible con OpenAI mediante la herramienta integrada `cal
 ## ❓ Preguntas Frecuentes
 
 **P: ¿Puedo usar esto con OpenAI en lugar de Gemini?**  
-R: No. Antigravity delega el trabajo LLM al agente principal anfitrión y no requiere claves de proveedor en `.env`.
+R: Antigravity ya no habla directamente con ningún proveedor — las llamadas LLM se delegan al agente principal anfitrión. El modelo que respalda al anfitrión (OpenAI, Gemini u otro) es el que usarás; no es necesario configurar claves de proveedor en `.env`.
 
 **P: ¿Cómo agrego una herramienta personalizada?**  
 R: ¡Coloca un archivo Python en `antigravity_engine/tools/` con tus funciones. Sin registro necesario! Ver [Características Zero-Config](ZERO_CONFIG.md).
@@ -180,4 +183,3 @@ Este proyecto está bajo la licencia **MIT**. Ver [LICENSE](../../LICENSE) para 
 **¡Feliz construcción con Antigravity!** 🚀
 
 Enlace amigo: [LINUX DO](https://linux.do/)
-

@@ -1,6 +1,10 @@
-﻿# 📚 Antigravity 工作区文档（中文）
+# Antigravity 工作区文档（中文）
 
-欢迎来到 **Antigravity Workspace Template** 的中文文档——一个在 Google Antigravity 上构建自主 AI 代理的生产级起步模板。
+欢迎来到 **Antigravity Workspace Template** 的中文文档。它是一个 AI IDE 起手套件、多智能体知识引擎和 MCP 服务，面向 Claude Code、Codex CLI、Cursor、Windsurf、Gemini CLI、Cline、Aider 和 VS Code Copilot。
+
+Antigravity 可以把代码库变成可问答的 AI 编程工作区。`ag-refresh` 构建 `.antigravity/` 项目知识、模块文档、路由地图、代码约定、结构和 git 洞察；`ag-ask` 与 `ag-mcp` 让编程 Agent 能基于文件路径、行号和可选 GitNexus 图谱上下文回答仓库问题。
+
+本文档覆盖的搜索词包括：AI 工作区模板、编程 Agent MCP 服务、Claude Code 代码库问答、Codex CLI 项目上下文、Cursor AI 代码搜索、Windsurf Agent 记忆、Gemini CLI 代码库助手、GitNexus 知识图谱、多智能体开发流程。
 
 ## 🎯 快速导航
 
@@ -18,21 +22,20 @@
 
 ## 🌟 亮点特性
 
-### 🧠 无限记忆引擎
-递归摘要自动压缩历史上下文，缓解上下文窗口限制。
+### 🧠 代码库知识中枢
+`ag-refresh` 扫描代码库并把可复用知识写入 `.antigravity/`，包括模块文档、结构、约定、地图和带证据的结构化 facts。
 
-### 🛠️ 通用工具协议
-遵循通用 ReAct 模式；在 `antigravity_engine/tools/` 放入 Python 函数即被自动注册为工具。
+### 🔌 面向 AI IDE 的 MCP 服务
+`ag-mcp` 暴露 `ask_project` 和 `refresh_project`，让 Claude Code 和其他支持 MCP 的编程 Agent 查询代码库，而不是反复重读整个项目。
+
+### 🧭 有证据的代码库问答
+`ag-ask` 将问题路由到正确的模块知识，并返回带文件路径、行号、agent 文档、git 洞察和可选 GitNexus 图谱数据的答案。
 
 ### 🎓 基于 Skill 的项目初始化
-使用内置 `agent-repo-init` skill 可以从当前模板快速初始化干净的新仓库。
-支持 `quick` 与 `full` 两种模式，并提供可移植脚本 `skills/agent-repo-init/scripts/init_project.py`。
+使用内置 `agent-repo-init` skill 可以从当前模板快速初始化干净的新仓库。支持 `quick` 与 `full` 两种模式，并提供可移植脚本 `skills/agent-repo-init/scripts/init_project.py`。
 
-### ⚡️ Gemini 原生
-针对 Gemini 2.0 Flash 的速度与函数调用能力做了优化。
-
-### 🔌 外部 LLM 支持
-通过内置 `call_openai_chat` 工具可调用任意 OpenAI 兼容 API（OpenAI、Azure、Ollama 等）。
+### 🧩 跨 IDE 的上下文层
+同一个 `.antigravity/` 知识层可以被 Claude Code、Codex CLI、Cursor、Windsurf、Gemini CLI、Cline、Aider 和 VS Code Copilot 复用。
 
 ## 🚀 常见任务
 
@@ -102,7 +105,7 @@
 ## ❓ 常见问题
 
 **Q: 可以用 OpenAI 代替 Gemini 吗？**  
-A: 不需要。Antigravity 将 LLM 工作委托给宿主主 Agent，不再要求在 `.env` 中配置 provider key。
+A: Antigravity 本身不再直接调用任何 provider —— 所有 LLM 调用都委托给宿主主 Agent。宿主主 Agent 后端是 OpenAI、Gemini 还是其他模型，决定了你实际在用哪个；`.env` 不再需要配置任何 provider key。
 
 **Q: 如何添加自定义工具？**  
 A: 将 Python 文件放进 `antigravity_engine/tools/`，无需额外注册，见 [零配置特性](ZERO_CONFIG.md)。
@@ -161,4 +164,3 @@ MIT License，详见仓库根目录 `LICENSE`。
 祝构建愉快！🚀
 
 友情链接：[LINUX DO](https://linux.do/)
-

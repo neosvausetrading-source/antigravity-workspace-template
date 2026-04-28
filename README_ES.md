@@ -2,13 +2,15 @@
 
 <img src="docs/assets/logo.png" alt="Antigravity Workspace" width="200"/>
 
-# AI Workspace Template
+# Antigravity — Plantilla de Workspace para Claude Code, Codex CLI y Cursor
 
-### Motor de conocimiento multi-agente para cualquier codebase.
+### Motor de conocimiento multi-agente + servidor MCP que convierte cualquier repositorio en un asistente de IA consultable. Compatible con Claude Code, Codex CLI, Cursor, Windsurf y Gemini CLI.
 
 `ag-refresh` construye la base de conocimiento. `ag-ask` responde preguntas. Cualquier LLM, cualquier IDE.
 
 Idioma: [English](README.md) | [中文](README_CN.md) | **Español**
+
+**Casos de uso buscables:** plantilla de workspace de IA, servidor MCP para Claude Code, contexto de proyecto para Codex CLI, Q&A de repositorios en Cursor, memoria de agentes en Windsurf, asistente de programación Gemini CLI, grafo de conocimiento de código, búsqueda de código con GitNexus y desarrollo multi-agente.
 
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
@@ -62,6 +64,19 @@ Enfoque tradicional:                    Enfoque Antigravity:
 | Preguntar "¿cómo funciona X?" | El agente lee archivos al azar | `ask_project` MCP → Router enruta al ModuleAgent responsable |
 
 La arquitectura son **archivos + un motor Q&A en vivo**, no plugins. Portable entre cualquier IDE, cualquier LLM, cero lock-in.
+
+---
+
+## ¿Quién usa Antigravity?
+
+Antigravity es para desarrolladores que quieren un **starter kit de AI IDE** en vez de archivos de prompts dispersos. Da a Claude Code, Codex CLI, Cursor, Windsurf, Gemini CLI, Cline, Aider y VS Code Copilot la misma base reutilizable de conocimiento del proyecto, para que los agentes de programación respondan preguntas de arquitectura, dependencias, implementación e historial git con evidencia real del repositorio.
+
+Úsalo cuando necesitas:
+- **Q&A de repositorio** — pregunta cómo funciona un módulo y recibe respuestas fundamentadas en rutas de archivo, números de línea y conocimiento generado en `agents/*.md`.
+- **Motor de contexto MCP** — expón `ask_project` y `refresh_project` a Claude Code o a cualquier flujo de programación con MCP.
+- **Documentación multi-agente** — ejecuta `ag-refresh` para generar conocimiento de módulos, mapas de enrutamiento, convenciones, estructura e insights de git.
+- **Memoria de IA entre IDEs** — usa `.antigravity/` como capa compartida para Claude Code, Codex, Cursor, Windsurf, Gemini CLI, Cline, Aider y Copilot.
+- **Búsqueda de código con grafo** — combina docs semánticos de módulos con análisis opcional de llamadas, dependencias e impacto mediante GitNexus.
 
 ---
 

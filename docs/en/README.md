@@ -1,6 +1,10 @@
-﻿# 📚 Antigravity Workspace Documentation
+# Antigravity Workspace Documentation
 
-Welcome to the comprehensive documentation for the **Antigravity Workspace Template** — a production-grade starter kit for building autonomous AI agents on Google Antigravity.
+Welcome to the documentation for **Antigravity Workspace Template**, an AI IDE starter kit, multi-agent knowledge engine, and MCP server for Claude Code, Codex CLI, Cursor, Windsurf, Gemini CLI, Cline, Aider, and VS Code Copilot.
+
+Antigravity turns a repository into a queryable AI coding workspace. `ag-refresh` builds `.antigravity/` project knowledge, module docs, routing maps, conventions, structure, and git insights. `ag-ask` and `ag-mcp` let coding agents answer repository questions with file paths, line numbers, and optional GitNexus graph context.
+
+Search terms this documentation intentionally covers: AI workspace template, MCP server for coding agents, Claude Code repository Q&A, Codex CLI project context, Cursor AI code search, Windsurf agent memory, Gemini CLI codebase assistant, GitNexus knowledge graph, and multi-agent development workflow.
 
 ## 🎯 Quick Navigation
 
@@ -18,21 +22,20 @@ Welcome to the comprehensive documentation for the **Antigravity Workspace Templ
 
 ## 🌟 Key Features
 
-### 🧠 Infinite Memory Engine
-Recursive summarization automatically compresses history—context limits are a thing of the past.
+### 🧠 Repository Knowledge Hub
+`ag-refresh` scans the codebase and writes reusable knowledge into `.antigravity/`, including module docs, structure, conventions, maps, and evidence-backed facts.
 
-### 🛠️ Universal Tool Protocol
-Generic ReAct pattern. Just register any Python function in `antigravity_engine/tools/`, and the Agent learns to use it automatically.
+### 🔌 MCP Server for AI IDEs
+`ag-mcp` exposes `ask_project` and `refresh_project` so Claude Code and other MCP-capable coding agents can query the repository instead of rereading the whole tree.
+
+### 🧭 Grounded Codebase Q&A
+`ag-ask` routes questions to the right module knowledge and returns answers grounded in file paths, line numbers, generated agent docs, git insights, and optional GitNexus graph data.
 
 ### 🎓 Skill-Based Project Initialization
-Use the built-in `agent-repo-init` skill to bootstrap a clean repository from this template.
-It supports `quick` and `full` modes and includes a portable script at `skills/agent-repo-init/scripts/init_project.py`.
+Use the built-in `agent-repo-init` skill to bootstrap a clean repository from this template. It supports `quick` and `full` modes and includes a portable script at `skills/agent-repo-init/scripts/init_project.py`.
 
-### ⚡️ Gemini Native
-Optimized for Gemini 2.0 Flash's speed and function calling capabilities.
-
-### 🔌 External LLM Support
-Call any OpenAI-compatible API via the built-in `call_openai_chat` tool (supports OpenAI, Azure, Ollama).
+### 🧩 Cross-IDE Context Layer
+One `.antigravity/` knowledge layer can be reused by Claude Code, Codex CLI, Cursor, Windsurf, Gemini CLI, Cline, Aider, and VS Code Copilot.
 
 ## 🚀 Common Tasks
 
@@ -110,7 +113,7 @@ Call any OpenAI-compatible API via the built-in `call_openai_chat` tool (support
 ## ❓ FAQ
 
 **Q: Can I use this with OpenAI instead of Gemini?**  
-A: No. Antigravity delegates LLM work to the embedding main agent and does not require provider keys in `.env`.
+A: Antigravity itself no longer talks to any provider directly — LLM calls are delegated to the embedding host/main agent. Whichever model that host is backed by (OpenAI, Gemini, or another) is what you'll effectively be using; no provider keys need to be configured in `.env`.
 
 **Q: How do I add a custom tool?**  
 A: Drop a Python file in `antigravity_engine/tools/` with your functions. No registration needed! See [Zero-Config Features](ZERO_CONFIG.md).
@@ -180,4 +183,3 @@ This project is licensed under the **MIT License**. See [LICENSE](../../LICENSE)
 **Happy building with Antigravity!** 🚀
 
 Friendly Link: [LINUX DO](https://linux.do/)
-
