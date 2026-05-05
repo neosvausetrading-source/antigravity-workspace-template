@@ -330,7 +330,7 @@ This spec explicitly does NOT cover:
 
 ## References
 
-- Architecture Proposal: [docs/en/SANDBOX_CODE_EXEC_ENV_PROPOSALmd](../../../../docs/en/SANDBOX_CODE_EXEC_ENV_PROPOSALmd)
+- Architecture Proposal: [docs/en/SANDBOX_CODE_EXEC_ENV_PROPOSAL.md](../../../../docs/en/SANDBOX_CODE_EXEC_ENV_PROPOSAL.md)
 - Roadmap Phase 9A: [docs/en/ROADMAP.md](../../../../docs/en/ROADMAP.md)
 - Change Proposal: [proposal.md](../../proposal.md)
 - Implementation Tasks: [tasks.md](../../tasks.md)
