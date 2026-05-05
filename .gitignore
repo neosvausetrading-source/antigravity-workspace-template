@@ -27,6 +27,8 @@ venv/
 env/
 ENV/
 .env
+.env.save
+.env*.bak
 .venv
 env.bak/
 venv.bak/
