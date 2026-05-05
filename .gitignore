@@ -34,7 +34,7 @@ env.bak/
 venv.bak/
 
 # Antigravity / IDE
-.antigravity/
+/.antigravity/
 
 .idea/
 .vscode/
