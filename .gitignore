@@ -34,6 +34,7 @@ env.bak/
 venv.bak/
 
 # Antigravity / IDE
+.antigravity/
 
 .idea/
 .vscode/
@@ -43,3 +44,5 @@ venv.bak/
 logs/
 data/
 .opencode/
+obsidian-wiki/
+agent_memory.json
