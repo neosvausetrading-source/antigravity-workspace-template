@@ -1,17 +1,27 @@
-# Agent Mission (Example)
+# Workspace Mission — Tripleta IA
 
-**Objective:** Example task — build a stock analysis agent.
+**Objective:** Workspace base for AI-assisted development using the Tripleta IA methodology.
 
-## Description
-This example agent should be able to take a stock ticker symbol (e.g., "GOOGL", "AAPL") and provide a comprehensive analysis including:
-1.  Current price and recent performance.
-2.  Latest news headlines related to the company.
-3.  A summary of analyst ratings.
+## Tripleta IA
 
-## Success Criteria
-- The agent can successfully retrieve real-time data.
-- The output is a concise, readable report.
-- The agent handles invalid tickers gracefully.
+- **Antigravity** — Analyze, evaluate, detect risks and opportunities
+- **Claude Code** — Build, modify, implement code
+- **Codex** — Review code quality, security, and efficiency
 
-## Note
-This file is a replaceable example mission. Update it to match your project goal.
+## Workflow
+
+1. Diagnose before building (Antigravity)
+2. Plan before editing (Claude Code)
+3. Review after changes (Codex)
+4. Disciplined Git via gh CLI + SSH
+
+## Current Focus
+
+This workspace is a fork of study8677/antigravity-workspace-template, configured as the foundation for the Tripleta IA development flow.
+
+## Principles
+
+- Stability > speed > new features
+- Small cycles with clear objectives
+- No big refactors without explicit approval
+- Every change is diagnosed, planned, reviewed, and committed
